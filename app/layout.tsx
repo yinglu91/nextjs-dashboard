@@ -1,5 +1,6 @@
 import '@/app/ui/global.css'
 import { ReactNode } from 'react'
+import { inter } from '@/app/ui/fonts'
 
 type Props = {
   children: ReactNode
@@ -8,7 +9,7 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   )
 }
